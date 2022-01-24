@@ -1,0 +1,1067 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    scroll-behavior: smooth;
+    user-select: none;
+
+}
+
+a:hover {
+    text-decoration: unset;
+}
+
+:root {
+    --br: 1px solid red;
+    --grad: linear-gradient(to top, #141E30, #243B55);
+    --grad2: radial-gradient(to center, #141E30, #243B55);
+    --wrapper: 80%
+}
+
+body {
+    margin: 0 auto;
+    background-color: #243b550a;
+}
+
+/* global style */
+h2 {
+    text-align: right;
+    color: #f05454;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 3%;
+    padding: 0;
+}
+
+h2 i {
+    font-size: 30px;
+    vertical-align: sub;
+}
+hr{
+    width: 80%;
+    margin: 1% auto;
+}
+.top-pg{
+    display: block;
+    position: fixed;
+    bottom: 3%;
+    right: 5%;
+    font-size: 50px;
+    color: #141E30;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+.top-pg i{
+    margin: 0;
+    padding: 0;
+}
+.top-pg:hover{
+    color: #f05454;
+}
+
+/* header style */
+header {
+    background-image: url('../images/the-end-of-a-book-1268x845.jpeg'), var(--grad);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+    position: relative;
+}
+.hide-bg{
+    height: auto;
+    background: none;
+}
+nav {
+    margin: 0 auto;
+    height: 60px;
+    background-image: linear-gradient(to top, rgba(20, 30, 48, 0.4), rgba(36, 59, 85, 0.4));
+    text-align: right;
+    line-height: 60px;
+
+}
+
+.wrapper {
+    width: var(--wrapper);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    width: 60%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+}
+
+.login {
+    display: flex;
+    width: 15%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.menu a,
+.login a {
+    font-size: 14px;
+    color: #FFF;
+}
+
+.menu a i,
+.login a i {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.menu a:hover,
+.login a:hover {
+    opacity: 0.8;
+
+}
+
+.mobilemenu {
+    display: none;
+    position: relative;
+    width: 60%;
+    z-index: 1;
+}
+
+.mobilemenu i {
+    font-size: 24px;
+    color: #FFF;
+    line-height: 60px;
+}
+
+.mobilemenu i:hover {
+    font-size: 24px;
+    color: #f05454;
+}
+
+/* 
+.mob-menu{
+    position: absolute;
+    width: 80%;
+    border: var(--br);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-image: var(--grad);
+}
+.mob-menu a{
+    border: var(--br);
+    font-size: 16px;
+    width: 100%;
+    padding: 0;
+    margin: 1% auto;
+    color: #FFF;
+    height: 30px;
+    line-height: 30px;
+}
+.mob-menu a i{
+    font-size: 16px;
+
+} */
+
+/* search area */
+
+.search .s-text {
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    text-align: center;
+}
+
+.search .input-search {
+    position: relative;
+}
+
+.search .input-search input {
+    width: 100%;
+    padding: 1% 2%;
+    height: 50%;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.search .input-search input:focus {
+    outline: none;
+}
+
+.search .input-search i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 50px;
+    padding: 1%;
+    color: #243B55;
+}
+
+.search .s-text>a {
+    font-size: 20px;
+    display: inline-block;
+    width: 30%;
+    background-color: #FFF;
+    color: #243B55;
+    text-align: center;
+    margin: 2% auto;
+    padding: 2% 1%;
+    border-radius: 50px;
+}
+
+.search .s-text>a:hover {
+    background: #f05454;
+    color: #FFF;
+
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (max-width: 1199px) {}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (max-width: 1024px) {
+    header {
+        height: ;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .menu {
+        width: 70%;
+    }
+
+    .login {
+        width: 20%;
+    }
+
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (max-width: 768px) {
+    header {
+        height: 350px;
+    }
+
+    .wrapper {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .menu {
+        width: 70%;
+    }
+
+    .menu a,
+    .login a {
+        font-size: 12px;
+    }
+
+    .menu a .ico,
+    .login a .ico {
+        font-size: 14px;
+    }
+
+    .login {
+        width: 20%;
+    }
+
+
+    .search .s-text {
+        width: 80%;
+        left: 10%;
+    }
+
+    .search .input-search {
+        position: relative;
+    }
+
+    .search .input-search input {
+        width: 100%;
+        padding: 1% 2%;
+        height: 50%;
+        border-radius: 50px;
+        font-size: 16px;
+    }
+
+    .search .input-search input:focus {
+        outline: none;
+    }
+
+    .search .input-search i {
+        font-size: 35px;
+    }
+
+    .search .s-text>a {
+        font-size: 16px;
+    }
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none;
+        width: 60%;
+    }
+
+    .login {
+        width: 27%;
+        margin-left: 30px;
+    }
+
+    .mobilemenu {
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    .search .s-text>a {
+        width: 45%;
+        font-size: 16px;
+    }
+
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        justify-content: space-around;
+    }
+
+    .menu {
+        display: none;
+        width: 30%;
+
+    }
+
+    .login {
+        width: 60%;
+        justify-content: space-around;
+    }
+
+
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 320px) {
+
+    .wrapper {
+        justify-content: space-around;
+    }
+
+    .menu {
+        display: none;
+        width: 30%;
+
+    }
+
+    .login {
+        width: 60%;
+        justify-content: space-around;
+    }
+
+    .search .s-text>a {
+        width: 55%;
+        font-size: 14px;
+    }
+    .search .input-search input{
+        font-size: 14px;
+    }
+}
+
+/* catagory section */
+.catagories {
+    margin: 2% auto;
+    width: var(--wrapper);
+}
+
+.catagories .cat {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.catagories .cat div {
+    width: 13%;
+    margin-bottom: 2%;
+    text-align: center;
+    padding: 2%;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-image .5s ease-in-out;
+}
+
+.catagories .cat div:hover {
+    background-image: var(--grad);
+
+}
+
+.catagories .cat div .img {
+    width: 35%;
+    height: 50px;
+    background-image: url('../icons/catagory.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image .5s ease-in-out;
+}
+
+.catagories .cat div h3 {
+    font-size: 20px;
+    color: #141E30;
+    padding-top: 10px;
+    transition: color .5s ease-in-out;
+}
+
+
+.catagories .cat div:hover h3 {
+    color: #f05454;
+}
+
+.catagories .cat div:hover .img {
+    background-image: url('../icons/book-hover.svg');
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (max-width: 1024px) {
+    .catagories .cat>div {
+        flex-flow: column wrap;
+        justify-content: stretch;
+    }
+
+    .cat .img {
+        width: 40% !important;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .catagories .cat>div {
+        width: 25%;
+    }
+    .catagories h2{
+        font-size: 26px;
+        padding: 2% 0;
+        text-align: center;
+    }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (max-width: 768px) {
+    .catagories .cat > div{
+        width: 30%;
+    }
+    .catagories h2{
+        font-size: 20px;
+        padding: 2% 0;
+        text-align: center;
+    }
+    
+
+}
+/* SMARTPHONES LANDSCAPE */
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (max-width: 480px) {
+    .catagories .cat div {
+        width: 50%;
+        height: 60px;
+        margin-bottom: 2%;
+        text-align: start;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cat h3 {
+        width: 75%;
+        font-size: 15px !important;
+    }
+
+    .catagories .cat div .img {
+        width: 20% !important;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 320px) {
+    .catagories{
+        width: 90%;
+    }
+    .catagories .cat div {
+        width: 50%;
+        height: 50px;
+        margin-bottom: 2%;
+        text-align: start;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cat h3 {
+        width: 65%;
+    }
+
+    .catagories .cat div .img {
+        width: 20% !important;
+        height: 100% !important;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) {
+    .latest-books .book, .top-books .book{
+        width: 45%;
+    }
+    
+    .latest-books  h2, .top-books h2, .quotes h2{
+        font-size: 20px;
+        padding: 2% 0;
+        text-align: center;
+    }
+    .book-text{
+        width: 100% !important;
+        height: 100% !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+    .book-text h3{
+        font-size: 14px;
+    }
+    .book-text span{
+        font-size: 12px;
+    }
+     .book a {
+       
+        padding: 1% 2%;
+        width: 60%;
+        margin: 2% auto;
+        text-align: right;
+        font-size: 10px;
+    }
+    
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) { 
+      .book-text{
+        width: 90% !important;
+        height: 80% !important;
+        top: 10% !important;
+        left: 5% !important;
+    }
+    .book-text h3{
+        font-size: 24px !important;
+    }
+    .book-text span{
+        font-size: 16px;
+    }
+     .book a {
+        font-size: 16px;
+        width: 70%;
+    }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+    .latest-books .book, .top-books .book{
+        width: 32%;
+    }
+    
+    .latest-books  h2, .top-books h2,.quotes h2{
+        font-size: 26px;
+    }
+    .book-text{
+        width: 80% !important;
+        height: 70% !important;
+        top: 15% !important;
+        left: 10% !important;
+    }
+    .book-text h3{
+        font-size: 18px;
+    }
+    .book-text span{
+        font-size: 14px;
+    }
+     .book a {
+       
+        padding: 1% 2%;
+        width: 60%;
+        font-size: 14px;
+    }
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+    .latest-books .book, .top-books .book{
+        width: 18%;
+    }    
+}
+
+
+
+
+
+/* latest books */
+
+.latest-books,
+.top-books {
+    width: var(--wrapper);
+    margin: 2% auto;
+}
+
+.latest-books .new,
+.top-books .new {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+
+}
+
+.book {
+    width: 18%;
+    position: relative;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+
+
+}
+
+.book .img img {
+    width: 100%;
+    height: 100%;
+    transition: filter 0.5s ease-in-out;
+}
+
+.book:hover img {
+    filter: blur(5px);
+}
+
+.book .book-text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(20, 30, 48, 1), rgba(36, 59, 85, 1));
+    border-radius: 20px;
+    color: #FFF;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 2% 0;
+    align-items: center;
+    visibility: hidden;
+}
+
+.book h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.book span {
+    margin-bottom: 2%;
+}
+
+.book a {
+    background-color: #f05454;
+    border: 1px solid #f05454;
+    color: #FFF;
+    padding: 1% 2%;
+    width: 50%;
+    margin: 2% auto;
+    text-align: right;
+}
+
+.book a:hover {
+    background-color: transparent;
+    color: #FFF;
+    border: 1px solid #f05454;
+    padding: 1% 2%;
+    width: 50%;
+    margin: 2% auto;
+    text-align: right;
+}
+
+.book .book-text i {
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.book:hover .book-text {
+    visibility: visible;
+}
+
+/* quotes section */
+.quotes{
+    background-color: #F2F2F2;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    width: 80%;
+    height: 250px;
+    margin: 0 auto;
+
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 50px 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    right: 95%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #243B55;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #f05454;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {
+      font-size: 22px;
+}
+  
+  /* Add a blue color to the author */
+  .author {
+      color: #f05454;
+      font-size: 16px;
+}
+
+
+
+/* footer section */
+footer{
+    height: 100px;
+    background-image: var(--grad);
+    line-height: 100px;
+    color: #FFF;
+}
+footer .f-c{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+footer .fo-menu{
+    width: 45%;
+    text-align: center;
+    color: #FFF;
+    
+}
+footer .cp{
+    width: 25%;
+    text-align: center;
+    color: #FFF;
+    font-size: 14px;
+
+   
+}
+footer .coder{
+    width: 25%;
+    text-align: center;
+    color: #FFF;
+    font-size: 14px;
+
+   
+}
+footer a{
+    color: #f05454;
+    font-size: 14px;
+    padding: 0 1%;
+}
+footer .cpa{
+    padding: 0;
+}
+footer a:hover{
+    opacity: 0.8;
+    color: #FFF;
+    font-size: 14px;
+
+}
+
+/* page numbers bar */
+
+.p-numbers{
+    margin: 2% auto;
+    text-align: center;
+    background-image: var(--grad);
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 60px;
+    line-height: 60px;
+
+}
+.p-numbers a{
+    font-size: 20px;
+    color: #FFF;
+    height: 100%;
+    width: 10%;
+    border-left: #243B55 1px solid;
+}
+.p-numbers a:last-of-type{
+    border: none;
+}
+.p-numbers a:hover{
+    background-color: #f05454;
+}
+
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) {
+   .p-numbers{
+       width: 80%;
+       height: 40px;
+       line-height: 40px;
+   }
+   .p-numbers a{
+       width:10%;
+       font-size: 14px;
+   }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+    .p-numbers{
+        width: 70%;
+        height: 50px;
+        line-height: 50px;
+    }
+    .p-numbers a{
+        width:10%;
+        font-size: 14px;
+    }
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+    .p-numbers{
+        width: 50%;
+    }
+}
+
+/* policy page */
+.page-policy{
+    width: 50%;
+    margin: 3% auto;
+    padding: 2%;
+}
+.page-policy h1{
+    text-align: center;
+}
+.page-policy p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) {
+   .page-policy{
+       width: 90%;
+       margin: 2% auto;
+   }
+   .page-policy h1{
+       font-size: 24px;
+   }
+   .page-policy h2{
+       font-size: 20px ;
+   }
+   .page-policy p{
+       font-size: 16px;
+   }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+    .page-policy{
+        width: 70%;
+        margin: 2% auto;
+    }
+    .page-policy h1{
+        font-size: 28px;
+    }
+    .page-policy h2{
+        font-size: 20px ;
+    }
+    .page-policy p{
+        font-size: 18px;
+    }
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+    .page-policy{
+        width: 60%;
+        margin: 2% auto;
+    }
+}
+   
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) {
+   
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+   
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+   
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+   
+}
+
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) {
+    nav {
+        background-color: #f05454;
+    }
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+    nav {
+        background-color: #73f054;
+    }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+    nav {
+        background-color: #54aaf0;
+    }
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+    nav {
+        background-color: #f05490;
+    }
+}
+
+/* custom hr */
+
+.custom-hr {
+    display: block;
+    margin: 2% auto;
+    text-align: center;
+    font-size: 36px;
+    color: #f05454;
+    position: relative;
+    padding: 0 10px;
+}
+.custom-hr::after {
+    content: '';
+    height: 1px;
+    display: inline-block;
+    width: 80%;
+    background-color: rgba(20, 30, 48, 0.3);
+    position: absolute;
+    top: 14px;
+    right: 10%;
+    z-index: -1;
+}

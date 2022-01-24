@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/book.svg" type="image/x-icon">
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="jquary/jquery-3.5.1.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>مكتبة إقرأ</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- navbar -->
+        <nav>
+            <div class="wrapper">
+                <div class="menu">
+                    <a href="#">
+                        <i  id="home" class="fa fa-home"></i>
+                        الرئيسية</a>
+                    <a href="pages/books.html">
+                        <i class="fas fa-book"></i>
+                        الكتب</a>
+                    <a href="#">
+                        <i class="fas fa-feather-alt"></i> المؤلفون</a>
+                    <a href="#">
+                        <i class="fa fa-list"></i>
+                        القوائم</a>
+                    <a href="#">
+                        <i class="fa fa-upload"></i>
+                        أنشر كتاب</a>
+                    <a href="#">
+                        <i class="fas fa-headset"></i> اتصل بنا</a>
+                </div>
+                <div class="mobilemenu">
+                    <i class="material-icons">menu</i>
+                    <!-- <div class="mob-menu">
+                        <a href="#">
+                            <i class="fa fa-home"></i>
+                            الرئيسية</a>
+                        <a href="#">
+                            <i class="fas fa-book"></i>
+                            الكتب</a>
+                        <a href="#">
+                            <i class='fas fa-book-reader'></i>
+                            المؤلفون</a>
+                        <a href="#">
+                            <i class="fa fa-list"></i>
+                            القوائم</a>
+                        <a href="#">
+                            <i class="fa fa-upload"></i>
+                            أنشر كتاب</a>
+                        <a href="#">
+                            <i class="material-icons ico">markunread</i>
+                            اتصل بنا</a>
+                    </div> -->
+                </div>
+                <div class="login">
+                    <a href="#">
+                        <i class='fas fa-user-check'></i>
+                        دخول</a>
+                    <a href="#">
+                        <i class="fas fa-user-plus"></i> تسجيل</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- search area -->
+        <div class="search">
+            <div class="s-text">
+                <div class="input-search">
+                    <input type="search" placeholder="البحث عن كتاب، مؤلف، دار نشر" name="search" id="search">
+                    <a href="#"><i class="material-icons">search</i></a>
+                </div>
+                <a href="pages/books.html">تصفح جميع الكتب</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- catagory section -->
+    <section class="catagories">
+        <h2>
+            <i class="material-icons">book</i>
+            اقسام الكتب
+        </h2>
+        <div class="cat">
+            <div>
+                <div class="img"></div>
+                <h3>كتب دينية</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>القسم العام</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>الروايات والقصص</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3> التاريخ</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3> الفلسفة والمنطق</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>كتب الأدب</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>السير والتراجم</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3> علم النفس</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>تعلم اللغات</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>السياسة</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>التنمية البشرية</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>كتب المعاجم</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>كتب اللغة</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>كل الاقسام</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+    <!-- latest books -->
+    <section class="latest-books">
+        <h2>
+            <i class="material-icons">book</i>
+            كتب اضيفت حديثاً
+        </h2>
+        <div class="new">
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/A (1).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/A (2).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/A (3).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/A (4).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/A (5).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/A (6).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/A (7).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/A (8).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/A (9).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/A (10).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <hr>
+    <section class="top-books">
+        <h2>
+            <i class="material-icons">book</i>
+            الكتب الأكثر رواجاً
+        </h2>
+        <div class="new">
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/B (1).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/B (2).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/B (3).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/B (4).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/B (5).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/B (6).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/B (7).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/B (8).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/B (9).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+            <div class="book">
+                <div class="img">
+                    <img src="images/bookcover/B (10).jpg">
+                </div>
+                <div class="book-text">
+                    <h3>عنوان الكتاب</h3>
+                    <span>أسم الكاتب</span>
+                    <a href="#">
+                        <i class='fas fa-file-pdf'></i>
+                        تحميل</a>
+                    <a href="#">
+                        <i class='fab fa-readme'></i>
+                        قراءة
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <hr>
+    <section class="quotes">
+        <h2>
+            <i class='fas fa-quote-right'></i>
+            اقتباسات مميزة
+            <i class='fas fa-quote-left'></i>
+        </h2>
+
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+                <q>
+                    “إنّ أقرب الناس للعقل والحكمة هو من يدرك نواقص نفسه وعدم خلوه من عيوب التفكير السليم”
+                </q>
+                <p class="author">- كتاب نظرية الفستق</p>
+            </div>
+
+            <div class="mySlides">
+                <q>
+                    ليست الثقافة دينا يوحد بين القلوب ويؤلفها, بل هى على الأرجح تفرقها؛ لأنها تطلع المظلومين على هول
+                    الظلم الذى يعانونه, وتطلع المحظوظين على ما يمكن أن يفقدوه
+                </q>
+                <p class="author">- رواية يوتيوبيا - احمد خالد توفيق</p>
+            </div>
+
+            <div class="mySlides">
+                <q>
+                    الطريف ان الكثير من الشباب _و علي الرغم من صدق نواياهم في طلب الجهاد _ يظنون ان الامر لا يتطلب
+                    اكثر من حمل السلاح لكي يصبح الواحد منهم بطلا كابطال الصحابة في بدر و احد ، و الواقع ان درب
+                    الجهاد طويل طويل لعل اخره حمل السلاح ( وليس اوله كما يظن البعض
+                </q>
+                <p class="author">- كتاب مائة من عظماء أمة الاسلام</p>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="next" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="prev" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots/bullets/indicators -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="f-c">
+
+            <div class="cp">
+                جميع الحقوق محفوظة لموقع
+                <a href="#" class="cpa">مكتبة اقرأ</a>
+            </div>
+            <div class="fo-menu">
+                <a href="pages/policy.html">سياسة الخصوصية</a>
+                <a href="pages/terms.html">شروط وأحكام الأستخدام</a>
+                <a href="#">حقوق الملكية</a>
+                <a href="#">عن اقرأ</a>
+                <a href="#">اتصل بنا</a>
+            </div>
+            <div class="coder">
+                صنع بحب
+                <i class="fas fa-heart"></i>
+                بواسطة
+                <a href="https:www.facebook.com/desgbr">أحمد جبر</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="top-pg">
+        <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+    </a>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
